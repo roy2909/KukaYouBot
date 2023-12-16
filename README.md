@@ -1,3 +1,6 @@
+# Portfolio link
+https://roy2909.github.io/Kuka/
+
 ## Overview
 This software plans a trajectory of the end effector of the youBot mobile manipulator (a mobile base with four mecanum wheels and a 5R robot arm), to pick up a block from a specified location,carry it to a final location and place it down. It also performs odometry as the chassis moves and feedback control to drive the youBot to pick up the block. The final output of the software will be a comma-separated values (csv) text file that specifies the configurations of the chassis and the arm, the angles of the four wheels, and the state of the gripper (open or closed) as a function of time. The initial configuration (the chassis phi, chassis x, chassis y, J1, J2, J3, J4, J5, W1, W2, W3, W4, gripper state = 0, 0.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), used is (x, y, 𝜃) = (0.2, 0, 0), The initial block configuration is at (x, y, 𝜃) = (1m, 0m, 0 rad) and the final block configuration is at (x, y, 𝜃) = (0 m,-1m, -π/2 rad). In ‘New Task’, the initial block configuration is at at (x, y, 𝜃) = (0.5m, 1.0m, 0 rad) and the final block configuration is at (x, y, 𝜃) = (0.5m, -1.5m, -π/2rad). The results were obtained using a feedforward PI controller tuned individually for each task.
 
